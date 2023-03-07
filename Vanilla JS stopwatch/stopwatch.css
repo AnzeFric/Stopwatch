@@ -1,0 +1,36 @@
+body {
+    background-color: orange;
+    color: white;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 20px;
+    width: 180px;
+    border-color: white;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: #FFFFFF;
+    color: #707070;
+}
+
+#heading{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#under_heading{
+    font-size: 25px;
+}
+
+#timer{
+    font-size: 30px;
+}
