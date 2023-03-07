@@ -1,17 +1,17 @@
 const buttonStart = document.getElementById("start");
 const timerText = document.getElementById("timer");
 let timerSeconds = 0, timerMinutes = 0;
-let timerSecText, timerMinText;
 let interval;
 
 function startTimer() {
+    buttonStart.disabled = true;
     interval = setInterval(incrementAndWrite, 1000);
 }
 
-function incrementAndWrite(seconds, minutes){
+function incrementAndWrite(){
     timerSeconds++;
-    timerSecText = timerSeconds;
-    timerMinText = timerMinutes;
+    let timerSecText = timerSeconds;
+    let timerMinText = timerMinutes;
 
     if (timerSeconds < 10) {
         timerSecText = "0" + timerSeconds.toString();
@@ -32,6 +32,7 @@ function incrementAndWrite(seconds, minutes){
 }
 
 function stopTimer() {
+    buttonStart.disabled = false;
     clearInterval(interval);
 }
 
